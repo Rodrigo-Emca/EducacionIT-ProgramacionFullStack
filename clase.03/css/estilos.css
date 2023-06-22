@@ -1,3 +1,35 @@
 body {
     background-color: #ddd;
 }
+
+a {
+    color: blueviolet;
+}
+
+/* Pseudoclases pertenecientes a los links */
+/* Las pseudoclases se le agregan a continuación del elemento seleccionado 
+El orden de estas pseudoclases es muy importante: se debe respetar ese orden.*/
+
+/* 
+1. :link
+2. :hover
+3. :visited
+4. :active
+ */
+
+a:link {
+    text-decoration: none; /* Por un tema de accesibilidad, la mayoria de las paginas no le sacan la linea debajo del link, para dejar en claro que es un link. */
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: solid;
+}
+
+a:active {
+    background-color: red;
+}
