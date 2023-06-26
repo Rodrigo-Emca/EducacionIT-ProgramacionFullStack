@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 05 - Formularios</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <p>Para crear un formulario, utilizamos la etiqueta "form"</p>
+
+    <h2>Atributos de la etiqueta form</h2>
+
+    <ul>
+        <li>action: Es la ruta (url) a donde se va a enviar la información de recopilación.</li>
+        <li>method: (protocolo http => metodos http) - Método GET - POST. Solo a traves de estas dos formas puedo inviar la información. Es cómo se va a enviar la información.
+            Get => A través de la URL o POST => a traves del cuerpo del HTML
+        </li>
+        <li>target: El mismo comportamiento que tenian en los links (anchor tags). Si le coloco target="_blank" se abre en otra pestaña. Si le coloco target="_self" se abre en la misma pestaña.</li>
+    </ul>
+
+    <h2>Formulario al enviarse va a armar la URL (Query Sting)</h2>
+    <p>Cuando envio la informacion, a traves del metodo GET. El formulario automaticamente arma la URL para enviar la informacion. A esa URL se la llama Query Sting.</p>
+
+    <hr>
+    <h2>Atributos input</h2>
+    <li>name: es el nombre de la variable donde se va a guardar la info escrita en el imput.</li>
+    <li>placeholder: guia para el usuario. Sobre lo que tiene que colocar dentro del campo de texto.</li>
+    
+    <h2>label:</h2>
+    <p>La etiqueta label permite</p>
+
+    <h2>Buscar una palabra en Google.</h2>
+
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+        <label for="">Ingrese la palabra a buscar:</label> <!-- La etiqueta label permite reforzar y ayudar al usuario para que sepa que es lo que tiene que ingresar en el input. -->
+        <input type="text" name="q"> <!-- Campo de texto. Input donde voy a escribir la información. -->
+        <button type="submit">Busqueda</button>
+    </form>
+
+    <hr>
+
+    <h2>Buscar una palabra en Yahoo</h2>
+
+    <form action="https://ar.search.yahoo.com/search" method="GET" target="_blank">
+        <label for="">Ingrese la palabra a buscar:</label>
+        <input type="text" name="p"> 
+        <button type="submit">Busqueda</button>
+    </form>
+
+    <hr>
+
+    <h2>Buscar una palabra en Bing</h2>
+
+    <form action="https://www.bing.com/search" method="GET" target="_blank">
+        <label for="">Ingrese la palabra a buscar:</label>
+        <input type="text" name="q"> 
+        <button type="submit">Busqueda</button>
+    </form>
+
+    <hr>
+
+    <h2>Buscar una palabra en Duck Duck Go</h2>
+
+    <form action="https://duckduckgo.com/" method="GET" target="_blank">
+        <label for="">Ingrese la palabra a buscar:</label>
+        <input type="text" name="q"> 
+        <button type="submit">Busqueda</button>
+    </form>
+
+    <hr>
+
+    <h2>Buscar una palabra en Diario LaNación</h2>
+
+    <form action="https://www.lanacion.com.ar/buscador/" method="GET" target="_blank">
+        <label for="">Ingrese la palabra a buscar:</label>
+        <input type="text" name="query" placeholder="Buscar en La Nación"> 
+        <button type="submit">Busqueda</button>
+    </form>
+
+    <hr>
+
+    <h2>Buscar una palabra en WikiPedia</h2>
+
+    <form action="https://es.wikipedia.org/w/index.php/" method="GET" target="_blank">
+        <label for="">Ingrese la palabra a buscar:</label>
+        <input type="text" name="search" placeholder="Buscar en WikiPedia"> 
+        <button type="submit">Busqueda en Wikipedia</button>
+    </form>
+
+    <hr>
+
+    <!-- <form action="">
+        <label for="">Ingrese el nombre:</label>
+        <input type="text" name="nombre" placeholder="Ingrese una palabra aquí">
+
+        <label for="">Ingrese el Apellido:</label>
+        <input type="text" name="apellido" placeholder="Ingrese una palabra aqui">
+    </form> -->
+
+</body>
+</html>
