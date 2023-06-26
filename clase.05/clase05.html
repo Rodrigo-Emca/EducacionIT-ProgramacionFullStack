@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 05 - Formularios</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <p>Para crear un formulario, utilizamos la etiqueta "form"</p>
+
+    <h2>Atributos de la etiqueta form</h2>
+
+    <ul>
+        <li>action: Es la ruta (url) a donde se va a enviar la información de recopilación.</li>
+        <li>method: (protocolo http => metodos http) - Método GET - POST. Solo a traves de estas dos formas puedo inviar la información. Es cómo se va a enviar la información.
+            Get => A través de la URL o POST => a traves del cuerpo del HTML
+        </li>
+        <li>target: El mismo comportamiento que tenian en los links (anchor tags). Si le coloco target="_blank" se abre en otra pestaña. Si le coloco target="_self" se abre en la misma pestaña.</li>
+    </ul>
+
+    <h2>Buscar una palabra en Google.</h2>
+
+    <form action="">
+        <label for="">Ingrese la palabra a buscar:</label> <!-- La etiqueta label permite reforzar y ayudar al usuario para que sepa que es lo que tiene que ingresar en el input. -->
+        <input type="text"> <!-- Campo de texto. Input donde voy a escribir la información. -->
+        <button type="submit">Busqueda</button>
+    </form>
+</body>
+</html>
