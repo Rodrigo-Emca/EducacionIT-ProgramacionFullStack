@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Clase 05 - Formularios (método POST)</title>
+</head>
+<body>
+    <a href="./clase05.html">Ir a Formularios método GET</a>
+    <hr>
+    <h1>Formularios (método POST)</h1>
+
+    <p>Si no coloco el atributo target, por defecto es _self</p>
+    <p>si no coloco el atributo method, por defecto es metodo get.</p>
+    <p>action: la url del servidor, la url donde se va enviar la informacion del formulario. Tambien conocido como endpoint, route, resource.</p>
+
+    <hr>
+
+    <form action="https://formspree.io/f/mjvqbweg" method="POST">
+
+        <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre">
+
+        <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido">
+
+        <label for="email">Correo:</label>
+            <input type="text" name="email">
+
+        <label for="edad">Edad:</label>
+            <input type="text" name="edad">
+        
+        <button type="submit">Enviar</button>
+    </form>
+
+
+
+</body>
+</html>
