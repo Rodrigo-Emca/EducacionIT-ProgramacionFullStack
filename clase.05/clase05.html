@@ -70,13 +70,33 @@
 
     <hr>
 
-    <form action="">
+    <h2>Buscar una palabra en Diario LaNación</h2>
+
+    <form action="https://www.lanacion.com.ar/buscador/" method="GET" target="_blank">
+        <label for="">Ingrese la palabra a buscar:</label>
+        <input type="text" name="query" placeholder="Buscar en La Nación"> 
+        <button type="submit">Busqueda</button>
+    </form>
+
+    <hr>
+
+    <h2>Buscar una palabra en WikiPedia</h2>
+
+    <form action="https://es.wikipedia.org/w/index.php/" method="GET" target="_blank">
+        <label for="">Ingrese la palabra a buscar:</label>
+        <input type="text" name="search" placeholder="Buscar en WikiPedia"> 
+        <button type="submit">Busqueda en Wikipedia</button>
+    </form>
+
+    <hr>
+
+    <!-- <form action="">
         <label for="">Ingrese el nombre:</label>
         <input type="text" name="nombre" placeholder="Ingrese una palabra aquí">
 
         <label for="">Ingrese el Apellido:</label>
         <input type="text" name="apellido" placeholder="Ingrese una palabra aqui">
-    </form>
+    </form> -->
 
 </body>
 </html>
