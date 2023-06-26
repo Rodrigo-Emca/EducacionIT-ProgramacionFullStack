@@ -26,10 +26,14 @@
             <input type="text" name="apellido">
 
         <label for="email">Correo:</label>
-            <input type="text" name="email">
+            <input type="email" name="email">
 
         <label for="edad">Edad:</label>
-            <input type="text" name="edad">
+            <input type="number" name="edad">
+
+        <label for="encriptado">Dato encriptado:</label>
+            <input type="password" name="encriptado">   <!-- type password esconde los datos que se estan escribiendo. -->
+            <!-- En este caso, pasa usar FORMSPREE, en for y name usar encriptado u otro nombre, excepto PASSWORD, porque lo detectará y bloqueará por incumplir las normas de uso de la app.  -->
         
         <button type="submit">Enviar</button>
     </form>
