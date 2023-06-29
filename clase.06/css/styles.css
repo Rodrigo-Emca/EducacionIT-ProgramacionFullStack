@@ -1,0 +1,8 @@
+body{
+    background-color: palegreen;
+}
+
+section {
+    background-color: rgba(172, 255, 47, 0.541);
+    padding: 1rem
+}
