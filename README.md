@@ -1,2 +1,2 @@
 # apuntesFullStack
-Clases de la cursada de Programación Full-Stack MERN.
+Clases prácticas (en código) y apuntes del curso de Programación Full-Stack MERN.
