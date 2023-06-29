@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/clase.06/css/styles.css">
+    <title>Clase 06 - FlexBox</title>
+</head>
+<body>
+    
+    <main>
+        <h1>Flexbox</h1>
+
+        <section>
+            <h2>¿Qué es FLEXBOX?</h2>
+            <p>Flexbox me permite crear diseños flexibles y responsivos. Con flexbox los elementos de una pagina web pueden distribuirse y alinearse de manera eficiente.</p>
+            <p>Trabaja con un eje. Se llama eje principal, o sea cuando lo defino, me va a dar un eje opuesto, secundario.</p>
+            <p>Trabaja basado en una jerarquia: O sea, elementos padres e hijos que van a estar efectos.</p>
+            <p>El contenedor flexbox (contenedor padre) va a permitir gestionar la posición de los hijos.</p>
+        </section>
+
+        <section>
+            <h3>Documentación: <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox">Flexbox</a></h3>
+        </section>
+
+        <section>
+            <h2>Propiedades:</h2>
+            <p>display: flex <br> Este será el primer paso para aplicar Flexbox. Se lo aplica en el css, a partir de la clase, id o etiqueta a la que deseamos aplicar.</p>
+
+            <ul>Align-Items:
+                <p>Gestiona el eje principal si tengo activo column.</p>
+                <li>strech : -default- Se estira el eje secundario, ocupando todo el contenedor.</li>
+                <li>start : Me posiciona los hijos en la parte superior del contenedor.</li>
+                <li>end : Me posiciona los hijos en la parte inferior del contenedor.</li>
+                <li>center: Me posiciona los hijos en el centro del contenedor, verticalmente.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Propiedades que pueden aplicarseles a los hijos.</h2>
+            <p>Existen 4 propiedades:</p>
+                <li>Order: Por defecto, viene en 0. Acepta valores negativos. Permite alterar (desde el css) el orden de los hijos contenidos.</li>
+                <li>Flex-Grow: Por defecto, esta en 0. Es un coheficiente de crecimiento, permite que el elemento hijo crezca en relación a los demás elementos.</li>
+                <li>Flex-Shrink: Por defecto, viene en 1.</li>
+                <li>Flesh-basis: Establece el elemento inicial del elemento (hijo flex) | valor por defecto auto (width)</li>
+        </section>
+    </main>
+</body>
+</html>
