@@ -1,8 +1,45 @@
-body{
-    background-color: palegreen;
+* { /*Selector universal*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-section {
-    background-color: rgba(172, 255, 47, 0.541);
-    padding: 1rem
+body {
+    display: flex;
+    background-color: rgba(172, 255, 47, 0.507);
+    flex-direction: column;
+}
+
+header {
+    background-color: gold;
+    height: 20vh;
+}
+
+.contenedor-principal{
+    display: flex;
+}
+
+main {
+    background-color: blueviolet;
+    height: 60vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+}
+
+aside{
+    background-color: pink;
+    width: 30vw;
+}
+
+article {
+    background-color: aquamarine;
+
+}
+
+footer {
+    background-color: tomato;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
 }
