@@ -1,0 +1,57 @@
+/* 
+woff2= formato woff2 (poco compatible)
+woff= formato woff (compatible)
+ttf = formato truetype(muy compatible)
+otf = formato otf (muy compatible)
+eot = formato embedded-opentype(compatible)
+*/
+
+@font-face {
+    font-family: 'Kenyan Coffee Rg';
+    font-style: normal;
+    font-weight: 300;
+    src:
+        local('Kenyan Coffee Rg'), /* Busca si la tipografia esta en la pc del usuario. Si no la encuentra, busca por URL */
+        url('../fonts/kenyan-coffee-rg.otf');
+}
+
+@font-face {
+    font-family: 'Kenyan Coffee Rg';
+    font-style: italic;
+    font-weight: 300;
+    src:
+        local('Kenyan Coffee Rg'),
+        url('../fonts/kenyan-coffee-rg-it.otf');
+}
+
+@font-face {
+    font-family: 'Kenyan Coffee Rg';
+    font-style: normal;
+    font-weight: 500;
+    src:
+        local('Kenyan Coffee Rg'),
+        url('../fonts/kenyan-coffee-rg.otf');
+}
+
+@font-face {
+    font-family: 'Kenyan Coffee Rg';
+    font-style: italic;
+    font-weight: 500;
+    src:
+        local('Kenyan Coffee Rg'),
+        url('../fonts/kenyan-coffee-rg-it.otf');
+}
+
+/* Ahora que están configuradas las fuentes, ya se pueden usar. */
+
+h1 {
+    font-family: 'Kenian Coffee Rg';
+    font-style: italic;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Kenian Coffee Rg';
+    font-style: normal;
+    font-weight: 300;
+}
