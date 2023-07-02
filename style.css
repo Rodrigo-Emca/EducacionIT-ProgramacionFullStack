@@ -1,0 +1,9 @@
+* {
+    margin: 1rem;
+    box-sizing: border-box;
+}
+
+.boxModulos {
+    border: 2px black solid;
+    padding: 1rem;
+}
