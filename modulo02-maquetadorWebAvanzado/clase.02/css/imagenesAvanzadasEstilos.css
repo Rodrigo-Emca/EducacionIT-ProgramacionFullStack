@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.imagen {
+    background-color: red;
+    width: 800px;
+    height: 500px;
+}
+
+.imagen img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* object-fit va a ajustar la imagen a su contenedor. Si usamos solo height y width al 100%, la imagen puede deformarse. Con object fit, ayudamos a la imagen a no perder la calidad ni deformarse. */
+    object-position: left;
+    /* object-position me permite ubicar la imagen respecto de su contenedor, a nuestro gusto. */
+}
