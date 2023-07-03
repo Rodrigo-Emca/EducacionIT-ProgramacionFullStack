@@ -3,3 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #ddd;
+}
+
+.background {
+    margin: 50px;
+    background-color: crimson;
+    width: 1000px;
+    height: 800px;
+}
+
+.background-1 {
+    background-color: green;
+    background-image: url('../image/montaña.jpg');
+    background-repeat: repeat;
+}
+
+.background-2 {
+    background-color: blue;
+    background-image: url('../image/celular.jpg'), url('../image/montaña.jpg'), url('../image/chocolate.jpg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center, top left, bottom right;
+    background-size: 400px, 600px, 800px;
+}
+
+.background-3 {
+    background-color: blue;
+    background-image: url(../image/candies.jpg), url('../image/escritorio.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, cover; 
+    /* Contain estira la imagen hasta donde la imagen llegue. Puede quedar parte del contenedor sin cubrir. */
+    /* Tambien se puede usar cover, que estira y cubre todo el contenedor, pero puede hacer que la imagen pierda calidad si se estira demasiado.  */
+}
+
+.background-4 {
+    background-color: violet;
+    background-image: linear-gradient(to top, red, blue, green); 
+    /* Usamos to top, to bottom, etc, para indicar hacia donde irá el degradado de colores. */
+    background-image: linear-gradient(15deg, red, blue, green); 
+    /* Tambien podemos indicarle n°deg para hacer una inclinación */
+    /* Incluso, se le puede agregar una imagen de background y que encima se le aplique el gradient, agregandole opacidad o transparencia a los colores.*/
+}
