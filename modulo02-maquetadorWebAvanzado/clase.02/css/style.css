@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.box {
+    background-color: green;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 2px;
+}
+
+.sin-box-sizing{
+    box-sizing: content-box; /* Valor por defecto. Se debe calcular cada elemento de border o padding que se agrega al tamaño total de la caja. */
+    background-color: red;
+    width: 270px; /* 300px - 30px del padding - 10px del border */
+    padding-left: 20px;
+    border: 5px solid black;
+}
+
+.con-box-sizing{
+    box-sizing: border-box; /* Con este valor, los calculos se realizan automaticamente. Me despreocupo de tener que andar calculando el tamaño del box, cuando agrego padding, o border.*/
+    padding-left: 50px;
+    border: 10px yellow dotted;
+}
