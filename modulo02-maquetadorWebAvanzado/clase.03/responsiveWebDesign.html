@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Clase 03 - Responsive Web Design</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html">Volver al Index</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Responsive Web Design</h1>
+        <section>
+            <img src="https://fredericgonzalo.com/app/uploads/2017/02/responsive-vs-mobile-first-webdesign-022-1024x689.png" alt="Imagen de Mobile first Web Design" height="400px">
+        </section>
+
+        <section>
+            <h2>Mobile First</h2>
+
+            <ul>
+                <li>
+                    <h3>Fluid Design</h3>
+                    <p>Utiliza porcentajes para definir el tamaño de los ejementos, permitiendo que estos se adapten a su contenedor, pero en pantallas grande los mismos se estiran demasiado.</p>
+                    <br>
+                    <p>Tambien existe una variable llamada <strong>Liquid Design</strong> que establece el uso de máximos y mínomos, pero esto genera espacios demasiado grandes esntre elementos.</p>
+                </li>
+
+                <li>
+                    <h3>Adaptive Desgin</h3>
+                    <p>Consiste en diseñar una página para cada tipo de dispositivo en el que se visualice el sitio, pero en este caso, los contenidos se repiten y son independientes.</p>
+                    <br>
+                    <p>Esta propuesta es ideal para clientes con bajo presupuesto, ya que generalmente se utilizan 2 versiones del sitio principal (desktop) y se utilizan herramientas para el redireccionamiento.</p>
+                </li>
+
+                <li>
+                    <h3>Responsive Design</h3>
+                    <p>Diseño utilizando multimedia flexible, un sistema de frillas adaptable e implementa el concepto <em>one web for all</em> para evitar la duplicación de contenido.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Tipos de medidas</h2>
+            <ul>
+                <li>
+                    <h3>Unidades Absolutas</h3>
+                    <p>Son aquellas cuyo valor es independiente al medio en el que se reproduce, es decir, que siempre miden lo mismo. Se utilizan normalmente para establecer limites a los tamaños de cajas y de esta manera evitar tamaños demasiado grandes o chicos.</p>
+                </li>
+
+                <ul>
+                    <li>
+                        <h4>Distancias:</h4>
+                        <ul>
+                            <li>100 mm</li>
+                            <li>10 cm</li>
+                            <li>2 in</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Tipograficas:</h4>
+                        <ul>
+                            <li>1 pc (1/6in)</li>
+                            <li>1 pt (1/72in)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Hidridas:</h4>
+                        <ul>
+                            <li>1 pc (1/6in)</li>
+                            <li>1 pt (1/72in)</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <li>
+                    <h3>Unidades relativas</h3>
+                    <p>Son aquellas que dependen de otro elemento para establecer su tamaño, y por lo tanto, no siempre miden lo mismo. Se utilizan principalmente para definir los tamaños de caja, asi como también el tamaño de las tipografias utilizadas.</p>
+                    <ul>
+                        <li>
+                            <h4>Tamaño:</h4>
+                            <ul>Porcentajes (%)</ul>
+                        </li>
+                        <li>
+                            <h4>Tipografía:</h4>
+                            <ul>
+                                <li>em (define su tamaño a partir del alto de la M)</li>
+                                <li>ex (define su tamaño a partir del alto de la X)</li>
+                                <li>ch (tamaño del caracter 0)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>Hidridas:</h4>
+                            <ul>
+                                <li>rem (ancho de la M en el root)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Unidades flexibles</h3>
+                            <p>Son aquellas que basan su tamaño en las dimensiones de la ventana (viewport) donde se visualiza la pagina web. Se utilizan para implementar tipografias adaptables o definir las alturas de caja de algunos elementos.</p>
+                            <ul>
+                                <li>Dimensión</li>
+                                <ul>
+                                    <li>vmin [viewport min] (lado menor)</li>
+                                    <li>vmax [viewport max] (lado mayor)</li>
+                                </ul>
+                                <li></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3></h3>
+                    <p></p>
+                </li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <div>
+                <h2>Media Queries</h2>
+                <p>Me permiten modificar la interfaz web basado en el dispositivo o tamaño del viewport del dispositivo.</p>
+                <p>Lo utilizo en el CSS, con @media { ... }</p>
+                <ul>
+                    <li>@media print { ... } </li>
+                    <p>Sirve para la impresión de la pagina web.</p>
+
+                    <li>@media screen { ... }</li>
+                        <p>Para la configuración de visualización de una pantalla.</p>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <h3>BreakPoints o puntos de quiebre:</h3>
+                    <li>Dispositivos pequeños < 576px (mobile) </li>
+                    <li>Dispositivos medianos > 768px (tablet)</li>
+                    <li>Dispositivos largos > 992px (notebook)</li>
+                    <li>Dispositivos extra-largos > 1200px (desktop)</li>
+                    <li>Dispositivos mega-largos > 1400px (SmartTV)</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
