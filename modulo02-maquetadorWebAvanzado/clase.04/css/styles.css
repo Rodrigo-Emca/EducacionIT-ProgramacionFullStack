@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* EM es relativa a su <etiqueta>, <contenedora>, <body>, y <html>. A la altura de la M mayuscula.*/
+
+.opinion {
+    font-size: 2em; /* padre directo body => body => 16px || 2em = 16px x 2 = 32px */
+    padding: 1em; /* .opinion (font size) => 32px => 1em */
+    margin: .5em 1em 2em 3em;
+    box-shadow: 1em .5em 1em blueviolet;
+}
