@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    margin: 1em;
+    background-color: #FFEADD;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* columnas */
+    grid-template-rows: repeat(5, fr); /* filas */
+    grid-template-areas: "header header header header" /* le definí la primera fila*/
+                        "content content content sidebar"
+                        "content content content sidebar"
+                        "content content content sidebar"
+                        "footer footer footer footer";
+}
+
+.elemento {
+    background-color: #ff6666;
+    text-align: center;
+}
+
+.elm1 {
+    background-color: blue;
+    grid-area: header;
+}
+
+.elm2 {
+    background-color: green;
+    grid-area: content;
+}
+
+.elm3 {
+    background-color: yellow;
+    grid-area: sidebar;
+}
+
+.elm4 {
+    grid-area: footer;
+}
