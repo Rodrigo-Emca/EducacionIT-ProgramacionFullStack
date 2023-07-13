@@ -53,3 +53,26 @@ h2, h3, h4, h5, h6 {
 .elementos div:last-of-type {
     color: teal;
 }
+
+/* !pseudoclase: nth-child() */
+/* Indicandole el numero, agarro el elemento que deseo. */
+
+.lista li:nth-child(4){
+    color: salmon;
+}
+
+/* 2n me selecciona todos los pares. */
+.lista li:nth-child(2n){
+    background-color: deeppink;
+}
+
+/* 2n+1 me selecciona todos los inpares. */
+.lista li:nth-child(2n+1){
+    background-color: deepskyblue;
+}
+
+/* !pseudocalse nth-last-child() */
+/* Cuenta desde el ultimo elemento, hacia arriba. */
+.lista li:nth-last-child(3n){
+    background-color: brown;
+}
