@@ -2,8 +2,8 @@
 
 /* Variables CSS */
 :root { /* Selector raiz, html */
-    --fondo-principal: #ffa41b; /* Creo una variable global */
-    --fondo-secundario: red;
+    --fondo-principal: red; /* Creo una variable global */
+    --fondo-secundario: orange;
 }
 
 * {
@@ -35,4 +35,21 @@ h2, h3, h4, h5, h6 {
 
 .grupo {
     background-color: var(--fondo-secundario);
+    margin: 20px;
+}
+
+/* !pseudoclase: first-child */
+.parrafos p:first-child{
+    color: green;
+    background-color: lightblue;
+}
+
+/* !pseudoclase: first-of-type */ 
+/* Dentro del padre, busca el primer elemento del tipo indicado. */
+.elementos p:first-of-type {
+    color: crimson
+}
+
+.elementos div:last-of-type {
+    color: teal;
 }
