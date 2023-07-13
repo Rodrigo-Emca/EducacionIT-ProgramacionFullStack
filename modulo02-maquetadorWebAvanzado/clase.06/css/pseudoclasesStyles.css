@@ -77,8 +77,14 @@ h2, h3, h4, h5, h6 {
     background-color: brown;
 }
 
-/* !pseudoclase: nth-last-of-type() */
+/* !pseudoclase: nth-of-type() */
+/* Selecciona el tipo elegido, desde arriba. */
+.lista-b p:nth-of-type(2){ 
+    background-color: honeydew;
+}
 
-.lista-b p:nth-last-of-type(1){
+/* !pseudoclase: nth-last-of-type() */
+/* Selecciona el tipo elegido, desde abajo. */
+.lista-b p:nth-last-of-type(1){ 
     background-color: forestgreen;
 }
