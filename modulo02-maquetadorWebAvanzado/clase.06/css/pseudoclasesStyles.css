@@ -76,3 +76,9 @@ h2, h3, h4, h5, h6 {
 .lista li:nth-last-child(3n){
     background-color: brown;
 }
+
+/* !pseudoclase: nth-last-of-type() */
+
+.lista-b p:nth-last-of-type(1){
+    background-color: forestgreen;
+}
