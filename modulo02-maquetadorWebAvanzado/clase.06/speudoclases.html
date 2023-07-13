@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/pseudoclasesStyles.css">
+    <title>Clase 06 - Pseudo Clases</title>
+</head>
+<body>
+    <div class="contenedor">
+    <h1>Pseudo Clases</h1>
+    
+    <p>Son selectores en css que permiten aplicar estilos a los elementos especificos en ciertos estados o condiciones. Las pseidoclases se añaden a los selectores css (.clase, #id, etiqueta) se le agrega </p>
+
+    <hr>
+
+    <!-- .contenedor>.grupo>h2{:first-child / :last-child}+.parrafos>p*3 -->
+        <div class="grupo">
+            <h2>:first-child / :last-child</h2>
+            <div class="parrafos">
+                <p>Soy el primer párrafo</p>
+                <p>Soy el segundo párrafo</p>
+                <p>Soy el tercer párrafo</p>
+            </div>
+        </div>
+
+        <!-- .grupo>h2{:first-of-type / :last-of-type}+.elementos>div+p+span+p+div -->
+        <div class="grupo">
+            <h2>:first-of-type / :last-of-type</h2>
+            <div class="elementos">
+                <div>Soy el primer div</div>
+                <p>Soy el primer parafo</p>
+                <span>Soy un span</span>
+                <p>Soy el segundo parrafo</p>
+                <div>Soy el otro div</div>
+            </div>
+        </div>
+
+        <!-- .grupo>h2{:nth-child() / :nth-last-child()}+ul.lista>li*8{Soy la opcion #$$} -->
+        <div class="grupo">
+            <h2>:nth-child() / :nth-last-child()</h2>
+            <ul class="lista">
+                <li>Soy la opcion #01</li>
+                <li>Soy la opcion #02</li>
+                <li>Soy la opcion #03</li>
+                <li>Soy la opcion #04</li>
+                <li>Soy la opcion #05</li>
+                <li>Soy la opcion #06</li>
+                <li>Soy la opcion #07</li>
+                <li>Soy la opcion #08</li>
+            </ul>
+        </div>
+
+
+        <div class="grupo">
+            <h2>:nth-of-type() / :nth-last-of-type</h2>
+            <div class="lista-b">
+                <div>Soy un div</div>
+                <p>Soy un parrafo</p>
+                <p>Soy otro parrafo</p>
+                <span>Soy un span</span>
+                <p>Soy otro parrafo mas</p>
+                <div>Soy otro div</div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

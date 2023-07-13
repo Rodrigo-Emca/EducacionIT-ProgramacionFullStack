@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,900&family=Raleway:ital,wght@1,500&display=swap');
+
+/* Variables CSS */
+:root { /* Selector raiz, html */
+    --fondo-principal: red; /* Creo una variable global */
+    --fondo-secundario: orange;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+.contenedor {
+    --fondo: #ffa41b; /* Variable local al contenedor. */
+    width: 700px;
+    padding: 25px;
+    background-color: var(--fondo-principal);
+}
+
+.grupo {
+    background-color: var(--fondo-secundario);
+    margin: 20px;
+}
+
+/* !pseudoclase: first-child */
+.parrafos p:first-child{
+    color: green;
+    background-color: lightblue;
+}
+
+/* !pseudoclase: first-of-type */ 
+/* Dentro del padre, busca el primer elemento del tipo indicado. */
+.elementos p:first-of-type {
+    color: crimson
+}
+
+.elementos div:last-of-type {
+    color: teal;
+}
+
+/* !pseudoclase: nth-child() */
+/* Indicandole el numero, agarro el elemento que deseo. */
+
+.lista li:nth-child(4){
+    color: salmon;
+}
+
+/* 2n me selecciona todos los pares. */
+.lista li:nth-child(2n){
+    background-color: deeppink;
+}
+
+/* 2n+1 me selecciona todos los inpares. */
+.lista li:nth-child(2n+1){
+    background-color: deepskyblue;
+}
+
+/* !pseudocalse nth-last-child() */
+/* Cuenta desde el ultimo elemento, hacia arriba. */
+.lista li:nth-last-child(3n){
+    background-color: brown;
+}
+
+/* !pseudoclase: nth-of-type() */
+/* Selecciona el tipo elegido, desde arriba. */
+.lista-b p:nth-of-type(2){ 
+    background-color: honeydew;
+}
+
+/* !pseudoclase: nth-last-of-type() */
+/* Selecciona el tipo elegido, desde abajo. */
+.lista-b p:nth-last-of-type(1){ 
+    background-color: forestgreen;
+}
