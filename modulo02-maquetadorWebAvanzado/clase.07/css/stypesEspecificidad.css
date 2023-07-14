@@ -1,1 +1,29 @@
-/* La especificidad en CSS es una regla que determina que estilos se aplican a un elemento en caso de que haya conflictos. Cada selector CSS tiene una especificidad asociada, basada en la combinación.*/
+/* La especificidad en CSS es una regla que determina que estilos se aplican a un elemento en caso de que haya conflictos. Cada selector CSS tiene una especificidad asociada, basada en la combinación de los selectores utilizados para seleccionar un elemento.*/
+
+/* La especificidad va a estar dad por 4 valores:
+
+inline id clase elemento 
+0       0    0       0
+
+Normalmente estan inciados en 0
+
+*/
+
+h2 { /* Especificidad basica, de elemento. */
+    color: crimson;
+}
+
+h2.titulo { /* En este caso, se indica una clase, tiene más especifidad que uno simple de elemento. */
+    color:aqua
+}
+
+h2#principal {/* La especificidad aqui es de id. */
+    color: green;
+}
+
+footer a{ /* Aqui tiene una especificidad de elemento x2: toma footer y a como elementos/etiquetas para aplicar el estilo. */
+    color: indigo;
+    background-color: beige;
+}
+
+/* No se recomienda el especificador inline (El style que se le pone en el HTML) porque luego,  no puede modificarlo dentro del css.*/
