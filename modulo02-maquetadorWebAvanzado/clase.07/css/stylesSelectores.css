@@ -5,3 +5,24 @@
     text-decoration: none;
 }
 
+[href="https://google.com.ar"] {
+    color: darkred;
+}
+
+[class] {
+    background-color: #ddd;
+}
+
+/* Seleccionar todos los elmentos que comiencen con el valor del atributo que se da. */
+[href^=https] {
+    color: olivedrab;
+}
+
+/* Seleccionar todos los elementos que terminan con el valor del atributo que se da. */
+[href$="2222"] {
+    color: darksalmon;
+}
+
+[href$=".com.ar"]{
+    background-color: yellowgreen;
+}
