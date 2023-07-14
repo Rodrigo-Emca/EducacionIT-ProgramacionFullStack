@@ -26,3 +26,30 @@
 [href$=".com.ar"]{
     background-color: yellowgreen;
 }
+
+/* De hermano adyacente (selector + selector) */
+/* Selecciona unicamente al elemento que sigue del primer elemento */
+
+section h2 + p {
+    color: goldenrod
+}
+
+/* General de hermanos (selector ~ selector) */
+/* Selecciona a todos los elementos que siguen después del primer elemento. */
+
+aside h3 ~ p {
+    color: indianred
+}
+
+/* Selector Universal (selector * selector) */
+/* Selecciona a todos los elementos disponibles. */
+
+/* Combinar de hijo (selector > selector) */
+/* Permite seleccionar elementos que son directamente hijos de otros. */
+
+.contenedor nav > a {
+    color: blueviolet;
+}
+
+/* Combinador de descendientes (selector selector) */
+/* Selecciona los elementos que sean descendientes de otro. */
