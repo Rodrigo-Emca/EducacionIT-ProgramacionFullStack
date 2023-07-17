@@ -1,0 +1,58 @@
+html {
+    background-color: #a4a4a4;
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #d7d7d7;
+    padding: 2em;
+}
+
+header {
+    background-color: #eaeaea;
+    padding: 0.4em;
+}
+
+h2{
+    background-color: steelblue;
+    width: 800px;
+}
+
+section {
+    border: 1px solid #333;
+    background-color: skyblue;
+    margin: 3em 0;
+    padding: 1em;
+    height: 300px;
+}
+
+#section1 {
+    /* overflow: visible; valor por defecto*/
+    overflow: hidden; /* Oculta los sobrantes, tanto de los costados como de alto. */
+}
+
+#section2 {
+    overflow: scroll; /* genera las barras para scrollear, cuando el contenido excede el contenedor */
+}
+
+#section3 {
+    overflow: auto; /* Se le da la opcion al navegador de autocomplear, según considere */
+}
+
+#section4 {
+    /* Puedo controlarlos por separado tambien. Esta es la opción más común de ver. */
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#section5 {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#section6 {
+    overflow: auto;
+}

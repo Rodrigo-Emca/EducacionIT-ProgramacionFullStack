@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    display: flex;
+    height: 100vh;
+}
+
+.clip-path {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(crimson, orange);
+
+    /* circle (RAIO at X Y */
+    /* Aqui tengo diferentes formas de obtener resultados. Es cuestión de probar y jugar. Clip-path es una "mascara de recorte". */
+
+    /* clip-path: circle(50%); */
+
+    /* clip-path: circle(50% at 100% 0%); */
+    
+    clip-path: circle(100% at bottom right);
+}
