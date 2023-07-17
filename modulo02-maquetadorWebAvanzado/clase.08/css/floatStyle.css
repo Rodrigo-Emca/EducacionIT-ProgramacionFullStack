@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: #a4a4a4;
+}
+
+.contenedor{
+    /* w75% para abreviar y hacer mas rapido */
+    width: 75%;
+}
+
+.cuadrado {
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(crimson, gold);
+    border: solid black 1px;
+    float: left;
+    margin: 10px; /* En caso de querer aplicar margenes, deben aplicarse sobre el elemento flotante.  */
+}
+
+/* En el caso de tener varias cajas, y que no entren todas en el contenedor, se ubicará el elemento que no entra, debajo. Similar a Flex Wrap. */
+
+.parrafo {
+    clear: left; /* Limpia el float. Tener en cuenta que hay que indicar el lado donde se encuentra el float. En este caso, el cuadrado float esta aplicado en left. */
+}
