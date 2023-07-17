@@ -13,7 +13,66 @@ body {
     width: 200px;
     height: 200px;
     margin: 10px;
+    float: left; /* Propiedad antigua de CSS para la construccion de interfaces web */
     padding: 20px;
     text-align: center;
     color: yellow;
+}
+
+/* Random Everything */
+
+/* Increment Selection */
+
+.box--1{
+    background-color: #14c51c;
+    border-radius: 20px; /* Shorthand para hacer el border */
+}
+.box--2{
+    background-color: #62c9cd;
+    border-top-left-radius: 15px; /* Tambien se puede aplicar el radius a cada uno de los lados. */
+}
+.box--3{
+    /* Si aplicamos a cada uno de los lados, es importante respetar el sentido de las agujas del reloj. */
+    background-color: #7f4c80;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 100px;
+}
+.box--4{
+    background-color: #5ce1f4;
+    border-radius: 10px 40px;
+}
+.box--5{
+    background-color: #dd8672;
+    border-radius: 10px 40px 100px;
+}
+.box--6{
+    background-color: #6e425d;
+    border-radius: 10px 40px 100px 2px;
+}
+.box--7{
+    background-color: #a8292e;
+    border-radius: 100px; /* Hace un circulo. Toma 100px de cada lado. */
+}
+.box--8{
+    background-color: #0f0651;
+}
+.box--9{
+    background-color: #78f6ad;
+}
+.box--10{
+    background-color: #3fcf2c;
+}
+.box--11{
+    background-color: #d5a53c;
+}
+.box--12{
+    background-color: #3a9181;
+}
+.box--13{
+    background-color: #ee0844;
+}
+.box--14{
+    background-color: #6be409;
 }
