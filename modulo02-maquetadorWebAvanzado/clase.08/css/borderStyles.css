@@ -53,19 +53,29 @@ body {
 }
 .box--7{
     background-color: #a8292e;
-    border-radius: 100px; /* Hace un circulo. Toma 100px de cada lado. */
+    border-radius: 100px; /* Hace un circulo. Toma 100px de cada lado. La caja tiene 200px de altura y 200px de ancho.*/
+    /* Se puede hacer con porcentajes tambien: 
+    border-radius: 50%; */
 }
 .box--8{
     background-color: #0f0651;
+    border-radius: 50%;
 }
 .box--9{
     background-color: #78f6ad;
+    border-radius: 100px / 20px; /* Toma 100px de la parte superior e inferior, y hace la curvatura en 20px desde los costados. */
 }
 .box--10{
     background-color: #3fcf2c;
+    /* Tambien puedo darle valor a cada lado */
+                /* ar-izq/ab-der // ab-der/ab-izq */
+    border-radius: 100px 20px/ 20px 30px;
 }
 .box--11{
     background-color: #d5a53c;
+                    /* Eje x              / Eje Y             */
+                /* ar-izq/ab-der/ab-der/ab-izq // ar-izq/ab-der/ab-der/ab-izq */
+    border-radius: 100px 45px 50px 100px / 50px 30px 33px 49px
 }
 .box--12{
     background-color: #3a9181;
