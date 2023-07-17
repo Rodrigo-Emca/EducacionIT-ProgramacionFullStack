@@ -38,15 +38,28 @@ body {
 }
 .box--4 {
     background-color: #dc3bf4;
+    box-shadow: 0 0 10px 0px hsla(45, 100%, 75%, 1), 14px 14px 15px 14px red;
+    /* Puedo agregar una segunda sombra, agregando una coma y los parámetros correspondientes. */
+    cursor: pointer; /* Le agrega la "manito" cuando pasa por encima del elemento. */
 }
 .box--5 {
     background-color: #c3c905;
+    box-shadow: inset 4px 4px 8px 5px rebeccapurple; /* Sombra interna al elemento */
 }
 .box--6 {
     background-color: #fc57e5;
+    box-shadow: inset 4px 4px 8px 5px rebeccapurple, 10px 10px 8px 2px red;
 }
 .box--7 {
+    background-image: url('https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-color: #2a51ad;
+    box-shadow: inset 5px 4px 7px -2px rgba(0, 0, 0, 0.3),
+                    -24px -14px 4px #dc3bf4,
+                    31px 25px 0px -4px #987d9d,
+                    15px -41px 3px -4px #1f61a7;
 }
 .box--8 {
     background-color: #01f555;
