@@ -33,7 +33,8 @@ body {
 .box--3 {
     background-color: #ed4ec1;
     color: #eee;
-    box-shadow: 20px 10px 5px 100px  hsl(0deg 0% 33% / 42%);
+    box-shadow: 20px 10px 5px 50px  hsl(0deg 0% 33% / 42%);
+    /* El cuarto valor del box-shadow es como ajustar la cercania/lejania de la luz que proyecta la sombra */
 }
 .box--4 {
     background-color: #dc3bf4;
