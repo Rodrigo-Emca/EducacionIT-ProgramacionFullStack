@@ -78,7 +78,8 @@ body {
     border-radius: 100px 45px 50px 100px / 50px 30px 33px 49px
 }
 .box--12{
-    background-color: #3a9181;
+    background: linear-gradient(orange, crimson, gold);
+    border-radius: 81% 19% 38% 62% / 42% 14% 86% 58%  ;
 }
 .box--13{
     background-color: #ee0844;
