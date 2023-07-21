@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,900&family=Raleway:ital,wght@1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Monserrat', sans-serif;
+    color: #6c6c6c;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+main {
+    width: 1200px;
+    margin: auto;
+}
+
+p {
+    margin: 32px;
+}
+
+.primero,
+.segundo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 32px 0;
+}
+
+.segundo {
+    flex-direction: row;
+}
+
+    .segundo div {
+        width: 512px;
+    }
+
+    #webdev {
+        opacity: 1;
+        color: cornflowerblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        animation-name: left-to-right;
+    }
+
+        #webdev h1 {
+            width: 380px;
+            font-weight: 600;
+            font-size: 2.5em;
+        }
+
+    #guy {
+        opacity: 1;
+
+        animation-name: right-to-left;
+    }
+
+    @keyframes left-to-right {
+        from {
+            opacity: 0.1;
+            transform: translate(-512px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+
+    @keyframes right-to-left {
+        from {
+            opacity: 0.1;
+            transform: translate(0);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate(512px);
+        }
+    }
