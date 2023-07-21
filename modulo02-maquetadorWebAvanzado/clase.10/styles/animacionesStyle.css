@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: steelblue;
+    overflow: hidden;
+    margin: 40px auto;
+}
+
+.spiderman {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+
+    /* animation: animar 4s 1 ; */
+    /* podemos usar infinite tambien, en lugar de 1. Este es el shorthand*/
+
+    animation-name: animar; /* Identificador de la animación */
+    animation-duration: 3s; /* Duración */
+    animation-timing-function: linear; /* ease, linear, cubic bezear */
+    animation-delay: 0s; /* tiempo que tarda en empezar */
+    animation-iteration-count: 1; /* cantidad de veces que se va a repetir la animación */
+    animation-direction: normal; /* default es normal. Tambien está reverse y alternate. Es el movimiento de la animación. */
+    animation-fill-mode: normal; /* default: none. Backwards: la animación al terminar, vuelve a su estado inicial. Forwards: la animación termina en el 100% o ulimo punto. Para que esto se vea, el count no debe estar en infinito.*/
+    animation-play-state: running; /* Que va a ocurrir cuando la pagina se cargue */
+}
+
+@keyframes animar {
+    0% {
+        background-color: green;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        background-color: yellowgreen;
+        transform: rotate(-10);
+    }
+
+    50% {
+        background-color: yellow;
+        transform: rotate(10deg);
+    }
+
+    75% {
+        background-color: orange;
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        background-color: red;
+        transform: rotate(0deg);
+    }
+}
