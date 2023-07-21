@@ -24,15 +24,10 @@
     animation-duration: 3s; /* Duración */
     animation-timing-function: linear; /* ease, linear, cubic bezear */
     animation-delay: 0s; /* tiempo que tarda en empezar */
-    animation-iteration-count: infinite; /* cantidad de veces que se va a repetir la animación */
+    animation-iteration-count: 1; /* cantidad de veces que se va a repetir la animación */
     animation-direction: normal; /* default es normal. Tambien está reverse y alternate. Es el movimiento de la animación. */
-    animation-fill-mode: none; /* default: none */
-    /* animation-play-state: running;  */
-    /* Que va a ocurrir cuando la pagina se cargue */
-}
-
-.spiderman:hover {
-    animation-play-state: running;
+    animation-fill-mode: normal; /* default: none. Backwards: la animación al terminar, vuelve a su estado inicial. Forwards: la animación termina en el 100% o ulimo punto. Para que esto se vea, el count no debe estar en infinito.*/
+    animation-play-state: running; /* Que va a ocurrir cuando la pagina se cargue */
 }
 
 @keyframes animar {
@@ -42,7 +37,7 @@
     }
 
     25% {
-        background-color: yellow;
+        background-color: yellowgreen;
         transform: rotate(-10);
     }
 
@@ -52,7 +47,7 @@
     }
 
     75% {
-        background-color: red;
+        background-color: orange;
         transform: rotate(-10deg);
     }
 
