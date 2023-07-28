@@ -19,6 +19,17 @@ while ( indice <= pasos ) {
 
 /* Bucle o ciclo Do While:
 El bloque Do While es muy similar al while pero garantiza que el bloque de código se ejecute al menos una vez, incluso si la condición es false.
+
+do {
+    codigo a ejecutar en cada iteracion
+} while (condición) // < La condicion de corte se evalua al final.
 */
 
+let index = 1
 
+//debugger
+do {
+    console.log(index)
+    index++
+    //debugger
+} while (index <= 5);
