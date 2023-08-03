@@ -1,1 +1,0 @@
-conosole.log(document.querySelector('title'))
