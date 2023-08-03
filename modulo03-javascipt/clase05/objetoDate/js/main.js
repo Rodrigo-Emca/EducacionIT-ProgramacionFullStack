@@ -48,28 +48,36 @@ console.log(txtHora)
 //creamos el objeto fecha
 let hora = new Date()
 
-//Obtenemos el numero de las horas
-let horas = hora.getHours()
-console.log('horas = ' + horas)
+function getHora() {
+        
+    //Obtenemos el numero de las horas
+    let horas = hora.getHours()
+    console.log('horas: ' + horas)
 
-if (horas < 10) {
-    horas = '0' + horas
+    if (horas < 10) {
+        horas = '0' + horas
+    }
+
+    // Obtenemos el numero de los minutos.
+    let minutos = hora.getMinutes()
+    console.log('minutos: '+ minutos)
+
+    if(minutos < 10 ) {
+        minutos = '0' + minutos
+    }
+
+    // Obtenemos el numero de segundos.
+    let segundos = hora.getSeconds()
+    console.log('segundos: '+ segundos)
+
+    if(segundos < 10) {
+        segundos = '0' + segundos
+    }
+
+    //txtHora.textContent = `${horas}:${minutos}:${segundos}`
 }
 
-// Obtenemos el numero de los minutos.
-let minutos = hora.getMinutes()
-console.log(minutos)
+getHora()
 
-if(minutos < 10 ) {
-    minutos = '0' + minutos
-}
-
-// Obtenemos el numero de segundos.
-let segundos = hora.getSeconds()
-console.log(segundos)
-
-if(segundos < 10) {
-    segundos = '0' + segundos
-}
-
-txtHora.textContent = `${horas}:${minutos}:${segundos}`
+//La funcion setInterval sirve para actualizar el llamado a una funcion.
+setInterval( getHora ) //recibe una funcion como argumento
