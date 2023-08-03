@@ -86,3 +86,46 @@ function prueba(item, callback){ //Callback o cb
 
 prueba(2, imprimirTexto1)
 prueba(10, 'holiiis')
+
+console.warn('---------------------------------------------------------------------------------------')
+
+//cd = callback
+
+function operacion(a, b, cb) {
+    //console.log(a, b, cb)
+
+    return cb(a, b)
+}
+
+//operacion(num1, num2, referenciaDeFuncion)
+
+const suma = function(a,b) {
+    return a + b
+}
+
+const resta = function(a,b) {
+    return a - b
+}
+
+const multiplicacion = function(a,b) {
+    return a * b
+}
+
+const division = function(a,b) {
+    return a / b
+}
+
+const resto = function(a,b) {
+    return a % b
+}
+//console.log(`La suma es: ${operacion(2, 5, suma)}`)
+//console.log(operacion(2,5,suma))
+console.log(`La suma es: ${operacion(2,5,suma)} `)
+
+console.log(`La resta es: ${operacion(20,7,resta)} `)
+
+console.log(`La multiplicación es: ${operacion(2,5,multiplicacion)} `)
+
+console.log(`La división es: ${operacion(15,5,division)} `)
+
+console.log(`El resto es: ${operacion(12,3,resto)} `)
