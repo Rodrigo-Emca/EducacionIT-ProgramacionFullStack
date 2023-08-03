@@ -6,7 +6,8 @@ const txt = document.getElementById('txt')
 
 //Creamos nuestro objeto fecha.
 const fecha = new Date()
-console.log(fecha)
+console.log(fecha) //me imprime un string.
+console.dir(fecha) //le saco una radiografia. Me permite ver todos los metodos que el objeto acepta.
 
 //Objetener el numero de dia del mes
 let diaMes = fecha.getDate()
@@ -31,5 +32,44 @@ console.log(anio)
 //imprimimos con txt.innerText.
 
 //txt.innerText = diaMes + '/' + mes + '/' + anio
-
 txt.innerHTML = `${diaMes}/${mes}/${anio}`
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Hora Actual */
+
+const txtHora = document.querySelector('#txtHora')
+// Puedo acceder al id con el querySelector, pero recordar agregar la etiqueta css, el # delante del nombre.
+// Tambien puedo acceder con getElementById.
+//const txtHora = document.getElementById('txtHora')
+console.log(txtHora)
+
+//creamos el objeto fecha
+let hora = new Date()
+
+//Obtenemos el numero de las horas
+let horas = hora.getHours()
+console.log('horas = ' + horas)
+
+if (horas < 10) {
+    horas = '0' + horas
+}
+
+// Obtenemos el numero de los minutos.
+let minutos = hora.getMinutes()
+console.log(minutos)
+
+if(minutos < 10 ) {
+    minutos = '0' + minutos
+}
+
+// Obtenemos el numero de segundos.
+let segundos = hora.getSeconds()
+console.log(segundos)
+
+if(segundos < 10) {
+    segundos = '0' + segundos
+}
+
+txtHora.textContent = `${horas}:${minutos}:${segundos}`
