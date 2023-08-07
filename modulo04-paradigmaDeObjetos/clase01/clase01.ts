@@ -27,3 +27,23 @@ class auto {
     }
 
 }
+class Estudiante {
+
+    nombre : string //defino el atributo y el tipo de dato del atributo.
+
+    constructor(nom: string) {
+        this.nombre = nom
+        console.log('Se creó la instancia estudiante (El objeto)')
+    }
+}
+
+const e1 = new Estudiante("Agustín"); //Siempre que haga un new, se va a ejecutar el constructor.
+const e2 = new Estudiante("Federico");
+const e3 = new Estudiante("Rodrigo");
+const e4 = new Estudiante("Sofia");
+const e5 = new Estudiante("Carolina");
+console.log(e1)
+console.log(e2)
+console.log(e3)
+console.log(e4)
+console.log(e5)
