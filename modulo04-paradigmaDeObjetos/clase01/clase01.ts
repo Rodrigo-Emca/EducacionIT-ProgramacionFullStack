@@ -30,18 +30,20 @@ class auto {
 class Estudiante {
 
     nombre : string //defino el atributo y el tipo de dato del atributo.
+    edad : number = 0
 
-    constructor(nom: string) {
-        this.nombre = nom
+    constructor(nom: string, age: number) {
+        this.nombre = nom;
+        this.edad = age;
         console.log('Se creó la instancia estudiante (El objeto)')
     }
 }
 
-const e1 = new Estudiante("Agustín"); //Siempre que haga un new, se va a ejecutar el constructor.
-const e2 = new Estudiante("Federico");
-const e3 = new Estudiante("Rodrigo");
-const e4 = new Estudiante("Sofia");
-const e5 = new Estudiante("Carolina");
+const e1 = new Estudiante("Agustín", 23); //Siempre que haga un new, se va a ejecutar el constructor.
+const e2 = new Estudiante("Federico", 19);
+const e3 = new Estudiante("Rodrigo", 27);
+const e4 = new Estudiante("Sofia", 25);
+const e5 = new Estudiante("Carolina", 30);
 console.log(e1)
 console.log(e2)
 console.log(e3)
